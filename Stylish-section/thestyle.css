@@ -76,11 +76,11 @@ section {
 }
 
 #navigation_list {
-    background: rgb(24, 17, 17);
+    background: rgb(0, 0, 0);
 }
 
 .navigation_hyperlink {
-	color: rgb(160, 148, 148);
+	color: rgb(63, 54, 54)27);
 }
 
 .navbar__list__item {
@@ -108,8 +108,7 @@ section {
 }
 
 
-/* ---- Theme Rules ---- */
-/* Landing Container Styles */
+
 .Thecontainer {
     padding: 1em;
     text-align: left;
@@ -128,12 +127,11 @@ section:nth-of-type(even) .Thecontainer {
     text-align: right; 
 }
 
-/* Background Circles */
-/* Note that background circles are created with psuedo elements before and after */
-/* Circles appear to be random do to use of :nth-of-type psuedo class */
+/* edit background circle here */
+
 section:nth-of-type(odd) .Thecontainer::before {
     content: '';
-    background: rgba(255, 255, 255, 0.187);
+    background: rgba(150, 145, 145, 0.187);
     position: absolute;
     z-index: -5;
     width: 20vh;
@@ -148,8 +146,8 @@ section:nth-of-type(even) .Thecontainer::before {
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,.1) 0%, rgba(255,255,255,.2) 100%);
     position: absolute;
-    top: 3em;
-    right: 3em;
+    top: 4em;
+    right: 4em;
     z-index: -5;
     width: 10vh;
     height: 10vh;
@@ -166,9 +164,9 @@ section:nth-of-type(3n) .Thecontainer::after {
     right: 0;
     bottom: 0;
     z-index: -5;
-    width: 10vh;
-    height: 10vh;
-    border-radius: 50%;
+    width: 11vh;
+    height: 11vh;
+    border-radius: 51%;
     opacity: 0;
     transition: ease 0.5s all;
 }
@@ -189,9 +187,7 @@ section:nth-of-type(3n + 1) .Thecontainer::after {
 }
 
 
-/* ---- Theme State Rules ---- */
-/* Section Active Styles */
-/* Note: your-active-class class is applied through javascript. You should update the class here and in the index.html to what you set in your javascript file.  */
+
 section.your-active-class {
     background: rgb(0, 0, 0);
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
@@ -208,15 +204,14 @@ section.your-active-class .Thecontainer::after {
 }
 
 section.active {
-    background: linear-gradient(0deg, rgba(156, 24, 24, 0.26) 100%, rgba(71, 26, 115, 0.774) 100%);
+    background: linear-gradient(0deg, rgba(48, 39, 39, 0.26) 100%, rgba(11, 6, 15, 0.774) 100%);
 }
 
 .active-nav {
-    color: red;
+    color: rgb(170, 0, 0);
 }
 
 
-/* Section Active Styles Keyframe Animations */
 @keyframes rotate {
 	from {
 		transform: rotate(0deg)
