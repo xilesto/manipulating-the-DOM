@@ -11,7 +11,7 @@ body {
 
 h1 {
     font-family: 'Fira Sans', sans-serif;
-    font-size: 3em;
+    font-size: 2em;
     margin: 2em 1rem;
 }
 
@@ -27,6 +27,7 @@ h2 {
     font-family: 'Oxygen', Sans-Serif;
     font-size: 3em;
     color: rgb(182, 164, 7);
+    padding-top: 2em;
 }
 
 p {
@@ -41,7 +42,6 @@ main {
 
 .main-hero {
     min-height: 45vh;
-    padding-top: 4em;
 }
 
 section {
@@ -52,24 +52,28 @@ section {
 
 
 .navigation_menu ul {
-    padding-left: 0;
     margin: 0;
     text-align: right;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .navigation_menu li {
     display: inline-block;
+    font-size: 1.2em;
+    padding: 1em;
 }
 
-.navigation_menu .menu__link {
-    display: block;
-    padding: 1em;
+.navigation_menu a {
     font-weight: bold;
     text-decoration: none;
-    color: #000;
+    color: #fff;
 }
 
-.navigation_menu .menu__link:hover {
+ .active {
     background: #333;
     color: #fff;
     transition: ease 0.3s all;
